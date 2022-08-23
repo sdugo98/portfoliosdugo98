@@ -1,0 +1,91 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Index*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: whitesmoke;
+}
+
+.logo {
+    color: #3472e6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-brand span {
+    color: #3472e6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro-personal {
+    width: 100%;
+    background-color: #252627fa;
+    margin: 10px 0px;
+}
+
+.intro-personal img {
+    margin: 20px 0px;
+    width: 100%;
+    border: ridge 2px #3472e6;
+}
+
+.intro-personal p {
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.intro-personal span {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #3472e6;
+}
+
+.site-footer {
+    height: 100%;
+}
+
+.iconos a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.iconos a i:hover {
+    color: #3472e6;
+    transform: scale(1.5);
+    transition: ease-in-out 0.8s;
+}
+
+.info-adicional {
+    width: 100%;
+    background-color: #252627fa;
+    margin: 10px 0px;
+}
+
+.info-adicional p {
+    color: white;
+    font-size: 1rem;
+}
