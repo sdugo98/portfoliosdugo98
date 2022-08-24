@@ -11,6 +11,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: whitesmoke;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -88,4 +89,80 @@ body {
 .info-adicional p {
     color: white;
     font-size: 1rem;
+    text-align: center;
+}
+
+.imagen-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    animation-name: fondo-imagen-index;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-delay: 05s;
+}
+
+.imagen-info img {
+    border: ridge 2px #3472e6;
+    margin-left: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+
+.imagen-info:hover {}
+
+@keyframes fondo-imagen-index {
+    0% {
+        background-color: #5f6061e1;
+        padding: 10px;
+    }
+
+    25% {
+        background-color: #434444e1;
+        padding: 20px;
+    }
+
+
+    50% {
+        background-color: #323333d5;
+        padding: 25px;
+    }
+
+    75% {
+        background-color: #323333d5;
+        padding: 15px;
+    }
+
+    100% {
+        background-color: #252627fa;
+    }
+}
+
+
+@media screen and (min-width:545px) {
+
+    .imagen-info img {
+        background-image: linear-gradient();
+        border: ridge 2px #3472e6;
+        margin-left: 10px;
+        width: 535px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    body p {
+        font-size: 4rem;
+    }
+
+    .imagen-info img {
+        width: 700px;
+        height: 500px;
+    }
+
 }
