@@ -1,0 +1,189 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Index*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+@import "./partials/header", "./partials/footer", "./partials/colors";
+
+.intro-personal {
+    width: 100%;
+    background-color: #252627fa;
+    margin: 10px 0px;
+
+    .intro-personal img {
+        margin: 20px 0px;
+        width: 100%;
+        border: ridge 2px $colorAzul;
+
+        .intro-personal p {
+            margin-top: 40px;
+            font-size: 1rem;
+            text-align: justify;
+            color: whitesmoke;
+
+            .intro-personal span {
+                font-size: 1.1rem;
+                font-weight: 800;
+                color: $colorAzul;
+
+            }
+        }
+    }
+}
+
+.info-adicional {
+    width: 100%;
+    background-color: #252627fa;
+    margin: 10px 0px;
+
+    .info-adicional p {
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+
+        .imagen-info {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin: 10px 0px;
+
+            .imagen-info img {
+                border: ridge 2px $colorAzul;
+                margin-left: 10px;
+                width: 300px;
+                height: 200px;
+                transition: all 1s ease-out;
+
+                .imagen-info img:hover {
+                    width: 650px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+
+.fila-contacto {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.356);
+
+    .imagen-contacto {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/backgroundcontacto.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .imagen-contacto h1 {
+            font-size: 2.3rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-align: center;
+
+            .imagen-contacto h2 {
+                font-size: 2.2rem;
+                margin-top: 30px;
+                color: whitesmoke;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+.boxGaleria {
+    background-color: rgba(22, 22, 21, 0.575);
+    margin: 20px 0px 20px 0px;
+
+    .boxImagen {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 250px;
+        height: 200px;
+        border: 03px ridge black;
+        border-radius: 05px;
+        transition: all 1s ease-in;
+
+        &:hover {
+            width: 620px;
+            height: 400px;
+        }
+    }
+}
+
+
+/* Media queries*/
+
+@media screen and (min-width:545px) {
+
+    .imagen-info img {
+        border: ridge 2px $colorAzul;
+        margin-left: 10px;
+        width: 535px;
+        height: 350px;
+    }
+
+    .imagen-contacto {
+        border-bottom: 1px solid white;
+    }
+
+    .imagen-contacto h1 {
+        font-size: 1.8rem;
+        margin-top: 30px;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .imagen-contacto h2 {
+        font-size: 1.6rem;
+        margin-top: 30px;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:575px) {
+    .imagen-contacto {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/backgroundcontacto.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+    body p {
+        font-size: 4rem;
+    }
+
+    .imagen-info img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .boxImagen {
+        width: 600px;
+        height: 400px;
+    }
+}

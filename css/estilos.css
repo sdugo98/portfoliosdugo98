@@ -149,13 +149,15 @@ body {
 
 .boxGaleria {
     background-color: rgba(22, 22, 21, 0.575);
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .boxImagen {
+    margin-left: 5px;
+    margin-top: 10px;
     width: 250px;
     height: 200px;
-    border: 04px solid #3472e6;
+    border: 03px ridge black;
     border-radius: 05px;
     transition: all 1s ease-in;
 }

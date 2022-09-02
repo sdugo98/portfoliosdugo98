@@ -1,0 +1,17 @@
+header {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 600;
+
+            .navbar-brand span {
+                color: #3472e6;
+            }
+        }
+    }
+}
