@@ -14,10 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-@import "./partials/header", "./partials/footer", "./partials/colors";
+@import "./partials/colors", "./partials/header", "./partials/footer";
 
 .intro-personal {
-    width: 100%;
     background-color: #252627fa;
     margin: 10px 0px;
 
@@ -26,21 +25,23 @@ body {
         width: 100%;
         border: ridge 2px $colorAzul;
 
-        p {
-            margin-top: 40px;
-            font-size: 1rem;
-            text-align: justify;
-            color: whitesmoke;
-
-            span {
-                font-size: 1.1rem;
-                font-weight: 800;
-                color: $colorAzul;
-
-            }
-        }
     }
 }
+
+.intro-personal p {
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: justify;
+    color: whitesmoke;
+
+    span {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: $colorAzul;
+
+    }
+}
+
 
 .info-adicional {
     width: 100%;
@@ -51,29 +52,30 @@ body {
         color: white;
         font-size: 1rem;
         text-align: center;
+    }
 
-        .imagen-info {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            margin: 10px 0px;
+    .imagen-info {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 10px 0px;
 
-            img {
-                border: ridge 2px $colorAzul;
-                margin-left: 10px;
-                width: 300px;
-                height: 200px;
-                transition: all 1s ease-out;
+        img {
+            border: ridge 2px $colorAzul;
+            margin-left: 10px;
+            width: 300px;
+            height: 200px;
+            transition: all 1s ease-out;
 
-                &:hover {
-                    width: 650px;
-                    height: 500px;
-                }
+            &:hover {
+                width: 650px;
+                height: 500px;
             }
         }
     }
 }
+
 
 
 .fila-contacto {
