@@ -21,18 +21,18 @@ body {
     background-color: #252627fa;
     margin: 10px 0px;
 
-    .intro-personal img {
+    img {
         margin: 20px 0px;
         width: 100%;
         border: ridge 2px $colorAzul;
 
-        .intro-personal p {
+        p {
             margin-top: 40px;
             font-size: 1rem;
             text-align: justify;
             color: whitesmoke;
 
-            .intro-personal span {
+            span {
                 font-size: 1.1rem;
                 font-weight: 800;
                 color: $colorAzul;
@@ -47,7 +47,7 @@ body {
     background-color: #252627fa;
     margin: 10px 0px;
 
-    .info-adicional p {
+    p {
         color: white;
         font-size: 1rem;
         text-align: center;
@@ -59,14 +59,14 @@ body {
             align-items: center;
             margin: 10px 0px;
 
-            .imagen-info img {
+            img {
                 border: ridge 2px $colorAzul;
                 margin-left: 10px;
                 width: 300px;
                 height: 200px;
                 transition: all 1s ease-out;
 
-                .imagen-info img:hover {
+                &:hover {
                     width: 650px;
                     height: 500px;
                 }

@@ -5,12 +5,12 @@ header {
         justify-content: space-between;
         text-align: center;
 
-        .navbar-brand {
+        a {
             font-size: 2rem;
             font-weight: 600;
 
-            .navbar-brand span {
-                color: #3472e6;
+            span {
+                color: $colorAzul;
             }
         }
     }
