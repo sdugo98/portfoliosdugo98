@@ -3,7 +3,7 @@ header {
     .navbar {
         display: flex;
         justify-content: space-between;
-        text-align: center;
+        @extend %textCenter;
 
         a {
             font-size: 1.8rem;
