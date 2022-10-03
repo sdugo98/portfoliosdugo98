@@ -146,8 +146,7 @@ main .fila-sobremi h1 {
   color: #3472e6;
 }
 main .fila-sobremi p {
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin: 25px 10px 50px 10px;
   font-size: 20px;
   color: whitesmoke;
 }
@@ -186,6 +185,20 @@ main .fila-sobremi h2 {
 }
 
 /* Media queries*/
+@media screen and (min-width: 320px) {
+  .imagen-contacto h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+  }
+  .imagen-contacto h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 545px) {
   .imagen-info img {
     border: ridge 2px #3472e6;
@@ -199,7 +212,7 @@ main .fila-sobremi h2 {
   .imagen-contacto h1 {
     font-size: 1.8rem;
     margin-top: 30px;
-    color: whitesmoke;
+    color: rgb(252, 252, 252);
     text-align: center;
   }
   .imagen-contacto h2 {
@@ -245,8 +258,15 @@ main .fila-sobremi h2 {
     margin-left: 100px;
     width: 600px;
   }
+  .footer-contacto {
+    height: 20vh;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .imagen-info img {
+    width: 900px;
+    height: 600px;
+  }
   .imagen-estudios img {
     margin-left: 500px;
     width: 900px;

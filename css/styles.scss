@@ -108,7 +108,6 @@ body {
 }
 
 
-
 .boxGaleria {
     background-color: #16161593;
     margin: 20px 0px 20px 0px;
@@ -143,8 +142,7 @@ main {
         }
 
         p {
-            margin-top: 10px;
-            margin-bottom: 50px;
+            margin: 25px 10px 50px 10px;
             font-size: 20px;
             color: whitesmoke;
         }
@@ -199,6 +197,24 @@ main {
 
 /* Media queries*/
 
+@media screen and (min-width: 320px) {
+    .imagen-contacto {
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: rgb(252, 252, 252);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-align: center;
+        }
+    }
+}
+
 @media screen and (min-width:545px) {
 
     .imagen-info img {
@@ -210,22 +226,21 @@ main {
 
     .imagen-contacto {
         border-bottom: 1px solid white;
-    }
 
-    .imagen-contacto h1 {
-        font-size: 1.8rem;
-        margin-top: 30px;
-        color: whitesmoke;
-        text-align: center;
-    }
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: rgb(252, 252, 252);
+            text-align: center;
+        }
 
-    .imagen-contacto h2 {
-        font-size: 1.6rem;
-        margin-top: 30px;
-        color: whitesmoke;
-        text-align: center;
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-align: center;
+        }
     }
-
 }
 
 @media screen and (max-width: 450px) {
@@ -281,15 +296,26 @@ main {
 
     }
 
+    .footer-contacto {
+        height: 20vh;
+    }
 }
 
 
 @media screen and (min-width:1024px) {
+    .imagen-info {
+        img {
+            width: 900px;
+            height: 600px;
+        }
+    }
+
     .imagen-estudios {
         img {
             margin-left: 500px;
             width: 900px;
         }
     }
+
 
 }
